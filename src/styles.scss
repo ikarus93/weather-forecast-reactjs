@@ -1,7 +1,19 @@
+$background: #1D1E22;
+$active-color: #1D70B7;
+$img-width: 50px;
+$img-height: 50px;
+
+@mixin row-display-settings {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+
 body {
 font-family: 'Krona One', sans-serif;
 color: lightgrey;
-  background-color: #1D1E22;
+  background-color: $background;
 }
 
 .app {
@@ -10,14 +22,12 @@ color: lightgrey;
 
 
 img {
-  width: 50px;
-  height: 50px;
+  width: $img-width;
+  height: $img-height;
   margin-left: -0.5rem;
 }
 .row {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  @include row-display-settings;
 }
 
 .row li {
@@ -36,5 +46,5 @@ img {
 }
 
 .active h4 {
-  color: #1D70B7;
+  color: $active-color;
 } 
