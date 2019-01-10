@@ -1,0 +1,40 @@
+body {
+font-family: 'Krona One', sans-serif;
+color: lightgrey;
+  background-color: #1D1E22;
+}
+
+.app {
+  margin-top: 5rem;
+}
+
+
+img {
+  width: 50px;
+  height: 50px;
+  margin-left: -0.5rem;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.row li {
+  /*display: inline-block;*/
+  margin-left: 3rem;
+  list-style: none;
+} 
+
+.row span:first-child {
+  margin-left: -0.8rem;
+  font-weight: bold;
+  color: #757574;
+}
+.row span:not(:first-child) {
+  margin-left: 0.8rem;
+}
+
+.active h4 {
+  color: #1D70B7;
+} 
