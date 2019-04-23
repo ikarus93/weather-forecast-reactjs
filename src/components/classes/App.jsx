@@ -9,7 +9,6 @@ class App extends Component {
   componentWillMount() {
     //Fetches location data of user, uses loading property to track loading process and render asynchronous interface dynamically
     this.setState({ loading: true });
-    console.log("Here")
 
     if (navigator.geolocation) {
       console.log("also here")
@@ -18,7 +17,7 @@ class App extends Component {
 
         if (pos) {
           this.setState({
-            url: `https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/c14f308e1154d496b42bb2aa36b44220/${
+            url: `https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/API_KEY/${
             pos.coords.latitude
           },${pos.coords.longitude}`,
             loading: false
